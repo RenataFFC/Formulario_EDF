@@ -29,48 +29,51 @@
                 <input type="text" id="cnpj" name="cnpj" class="inputUser" placeholder="CNPJ - Campo não obrigatório">
                 <input type="text" id="responsavel" name="responsavel" class="inputUser"
                     placeholder="Solicitante: Exemplo Sindico, Zelador, Pessoa Fisica">
-        
-
-            <p class="select">Serviço</p>
-            <select id="servico" name="servico" required>
-                <option value=""></option>
-                <option value="Manutencao">Manutencao</option>
-                <option value="InstalaçãoNova">Instalacao Nova</option>
-               </select>
-
-            <p class="select">Solicitante</p>
-            <select id="solicitacao" name="solicitacao" required>
-                <option value=""></option>
-                <option value="Condominio">Condomínio</option>
-                <option value="Empresa">Empresa</option>
-                <option value="PessoaFisica">Pessoa Física</option>
-            </select>
 
 
+                <p class="select">Serviço</p>
+                <select id="servico" name="servico" required>
+                    <option value=""></option>
+                    <option value="Manutencao">Manutencao</option>
+                    <option value="InstalaçãoNova">Instalacao Nova</option>
+                </select>
 
-            <p class="select">Seu contato é para qual atendimento:</p>
-            <select id="tipoServico" name="tipoServico" required>
-                <option value=""></option>
-                <option value="Motor">Motor</option>
-                <option value="Camera">Câmeras</option>
-                <option value="Alarme">Alarme</option>
-                <option value="Interfone">Interfone</option>
-                <option value="CercaEletrica">Cerca Elétrica</option>
-            </select>
+                <p class="select">Solicitante</p>
+                <select id="solicitacao" name="solicitacao" required>
+                    <option value=""></option>
+                    <option value="Condominio">Condomínio</option>
+                    <option value="Empresa">Empresa</option>
+                    <option value="PessoaFisica">Pessoa Física</option>
+                    <option value="Outros">Outros</option>
+                </select>
 
-            <p class="select"> <label for="modelo" class="">Portão Automatizado? Qual o tipo do motor</label></p>
-            <select id="modelo" name="modelo">
-                <option value=""></option>
-                <option value="Deslizante">Deslizante</option>
-                <option value="Basculante">Basculante</option>
-                <option value="PivoTipoFolha">Pivô tipo folha</option>
-                <option value="PivoRobo">Pivô Robô</option>
-            </select>
 
-    </div>
+
+                <p class="select">Seu contato é para qual atendimento:</p>
+                <select id="tipoServico" name="tipoServico" required>
+                    <option value=""></option>
+                    <option value="Motor">Motor</option>
+                    <option value="Camera">Câmeras</option>
+                    <option value="Alarme">Alarme</option>
+                    <option value="Interfone">Interfone</option>
+                    <option value="CercaEletrica">Cerca Elétrica</option>
+                    <option value="Outros">Outros</option>
+                </select>
+
+                <p class="select"> <label for="modelo" class="">Portão Automatizado? Qual o tipo do motor</label></p>
+                <select id="modelo" name="modelo">
+                    <option value=""></option>
+                    <option value="Deslizante">Deslizante</option>
+                    <option value="Basculante">Basculante</option>
+                    <option value="PivoTipoFolha">Pivô tipo folha</option>
+                    <option value="PivoRobo">Pivô Robô</option>
+                    <option value="Outros">outros</option>
+                </select>
+
+            </div>
 
             <textarea id="message" name="message" required
-                placeholder="Descreva aqui, brevemente sua solicitação de orçamento para manutenção ou aquisição do novo motor"></textarea>
+                placeholder="Descreva aqui, brevemente sua solicitação de orçamento para manutenção ou aquisição do serviço ou novo equipamento."></textarea>
             <div class="bottom">
                 <input type="submit" id="submit" value="Enviar">
             </div>
