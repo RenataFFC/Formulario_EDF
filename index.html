@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
 
 <body>
 
-    <section>
+    <section class="formulario">
         <form id="budget-form">
             <div class="logo">
                 <img src="./imagens/logo.png" alt="logo">
@@ -22,16 +23,19 @@
 
             </div>
             <div class="input-group">
-                <input type="text" id="name" name="name" class="inputUser" placeholder="Nome" required>
+                <label inputUser nome>Nome:</label>
+                <input type="text" id="name" name="name" class="inputUser nome" placeholder="Nome" required>
+                <label inputUser >E-mail:</label>
                 <input type="email" id="email" name="email" class="inputUser email" placeholder="E-mail" required>
+                <label inputUser phone >Telefone:</label>
                 <input type="tel" id="phone" name="phone" class="inputUser phone" placeholder="Número Telefone"
                     required>
-                <input type="text" id="cnpj" name="cnpj" class="inputUser" placeholder="CNPJ - Campo não obrigatório">
-                <input type="text" id="responsavel" name="responsavel" class="inputUser"
-                    placeholder="Solicitante: Exemplo Sindico, Zelador, Pessoa Fisica">
+                <label inputUser cnpj >CNPJ:</label>
+                <input type="text" id="cnpj" name="cnpj" class="inputUser cnpj" placeholder="CNPJ - Campo não obrigatório">
+                <label inputUser>Solicitante:</label>
+                <input type="text" id="responsavel" name="responsavel" class="inputUser responsavel"  placeholder="Solicitante: Exemplo Sindico, Zelador, Pessoa Fisica">
 
-
-                <p class="select">Serviço</p>
+             <p class="select">Serviço</p>
                 <select id="servico" name="servico" required>
                     <option value=""></option>
                     <option value="Manutencao">Manutencao</option>
@@ -60,7 +64,7 @@
                     <option value="Outros">Outros</option>
                 </select>
 
-                <p class="select"> <label for="modelo" class="">Portão Automatizado? Qual o tipo do motor</label></p>
+                <p class="select"> Portão Automatizado? Qual o tipo do motor</p>
                 <select id="modelo" name="modelo">
                     <option value=""></option>
                     <option value="Deslizante">Deslizante</option>
@@ -71,12 +75,14 @@
                 </select>
 
             </div>
-
+   
             <textarea id="message" name="message" required
                 placeholder="Descreva aqui, brevemente sua solicitação de orçamento para manutenção ou aquisição do serviço ou novo equipamento."></textarea>
             <div class="bottom">
                 <input type="submit" id="submit" value="Enviar">
             </div>
+
+
         </form>
         <footer>
             <div class="rodape">
