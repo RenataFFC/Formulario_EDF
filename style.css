@@ -84,6 +84,8 @@ p.select {
     margin: auto;
     border-radius: 5px;
    border: 1px solid #c1c1c1;
+ background: #FFF;
+
 }
 
 textarea {
@@ -134,10 +136,7 @@ footer {
 
 }
 
-label{
-  display: none;
 
-}
 
 @media only screen and (min-width : 1280px) {
 
@@ -148,9 +147,29 @@ body{
 background:  #F2C94C;
 }
 
+.logo{
+  display: flex;
+
+flex-direction: row;
+width: 450px;
+ justify-content: space-around;
+
+}
+
+.logo h1 {
+      font-size: 15px;
+
+}
+
+
+.logo img {
+    width: 115px;
+    height: 115px;
+}
+
 .formulario{
    position: absolute;
-    top: 50%;
+    top: 40%;
     left: 40%;
     transform: translate(-40%, -40%);
     background-color: #FFF;
@@ -163,6 +182,21 @@ background:  #F2C94C;
 }
 
 
+#servico,
+#solicitacao,
+#tipoServico,
+#modelo,
+p.select,
+textarea,
+input {
+   width: 500px;
+
+}
+
+textarea{
+  height: 150px;
+
+}
 
 
 
