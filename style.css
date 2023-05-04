@@ -70,6 +70,7 @@ p.select {
    margin: 10px auto;
     font-size: 18px;
     margin-bottom: 10px;
+ border-radius: 5px;
   
 }
 
@@ -85,6 +86,21 @@ p.select {
     border-radius: 5px;
    border: 1px solid #c1c1c1;
  background: #FFF;
+
+}
+
+input#name.inputUser,
+input#email.inputUser,
+input#phone.inputUser,
+input#cnpj.inputUser,
+input#responsavel.inputUser,
+textarea#message::placeholder{
+ padding-left: 5px;
+}
+
+textarea#message::placeholder{
+ padding-left: 5px;
+ text-align:justify;
 
 }
 
